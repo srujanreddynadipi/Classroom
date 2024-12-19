@@ -1,2 +1,1 @@
-# Web devlopment
- web devlop
+skills
