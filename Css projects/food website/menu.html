@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="menu">
+        <h2>Menu</h2>
+    </div>
+
+    <div id="about">
+        <h2>About Us</h2>
+    </div>
+
+    <div id="location">
+        <h2>Our Location</h2>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Us</h2>
+    </div>
+    <section id="menu">
+        <h1>Welcome to our Online Ordering!</h1>
+
+        <h2>Menu</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious pizza with your choice of toppings.</p>
+                <button onclick="addItem('Pizza')">Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <img src="chicken.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Juicy burger with cheese, lettuce, and tomato.</p>
+                <button onclick="addItem('Burger')">Add to Order</button>
+            </div>
+        </div>
+
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+    </section>
+
+    <script>
+        function addItem(itemName) {
+            const orderList = document.getElementById('order-list');
+            const newItem = document.createElement('li');
+            newItem.textContent = itemName;
+            orderList.appendChild(newItem);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+input{
+    font-family: "geist mono" , monospace;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+    padding-right: 4rem;
+    letter-spacing: 0.2ch;
+    border-radius: 6px;
+    color: beige;
+    background-color: rgb(85, 85, 62);
+    border-style: solid;
+    background: pink;
+    outline: none;
+    transition: border-color 0.2s , color 0.2s;
+}

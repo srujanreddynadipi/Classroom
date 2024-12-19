@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function check(n1,n2,n3){
+            let r1 = n1%10;
+            let r2 = n2%10;
+            let r3 = n3%10;
+            if(r1===r2 && r2 === r3){
+                console.log(`${n1},${n2},${n3} are having same last digit`);
+            }else{
+                console.log("the given numbers are  not  same last digit")
+            }
+        }
+        check(123,233,123)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

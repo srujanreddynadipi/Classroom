@@ -1,0 +1,26 @@
+.todo-container{
+  height: 40vh;
+  background-color: #d3d3ba;
+  border-radius: 40px;
+}
+
+
+
+input{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.item-container{
+  text-align-last: left;
+}
+
+.item-row{
+  margin: 10px 5px;
+}
+
+.btn{
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+/* style.css */
+body {
+    font-family: sans-serif; /* Choose a clean sans-serif font */
+    margin: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 40px 0; 
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px; /* Limit the container width */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 3em; /* Large heading */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+  }
+  .image-circles img {
+    width: 100px; /* Adjust width for oval shape */
+    height: 150px; /* Adjust height for oval shape */
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 0 10px; 
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        // area of right angled triangle
+        function area(base, height) {
+            return (base * height) / 2
+        }
+        console.log(`Area of a triangle is: ${area(prompt("enter the first num"), prompt("enter the second num"))}`)
+
+        // area of normal triangle
+        function areat(a, b, c) {
+            let s = (a + b + c) / 2;
+            console.log(s)
+            var temp = s * (s - a) * (s - b) * (s - c);
+            console.log(temp)
+            return Math.sqrt(temp);
+        }
+        console.log(areat(10, 5, 10))
+
+        //12.5
+        //index.html:20 585.9375
+        //index.html:23 24.206145913796355
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

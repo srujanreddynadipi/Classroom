@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //swapping using temporary variable
+        var a = prompt("please enter the first value")
+        var b = prompt("please enter the second value")
+        console.log(`this is the value of a is: ${a} \n the value of b is: ${b}`)
+        var temp;
+        temp = a;
+        a = b;
+        b = temp;
+        console.log(`this is the value of a is: ${a} \n the value of b is: ${b}`)
+
+        //swaping  without using the temporary variable
+        a = parseInt(a) + parseInt(b);
+        var b = parseInt(b) - parseInt(a);
+        a = parseInt(a) - parseInt(b);
+        console.log(`after swapping this is the value of a is: ${a} \n the value of b is: ${b}`)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

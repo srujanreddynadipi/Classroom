@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        // var string = prompt("please enter the a string")
+        // var stringArray = string.split('');              // this make the string split into letter and save in a array
+        // var stringArrayRev = stringArray.reverse();     // reverse the array 
+        // var revString = stringArrayRev.join('');        //convert into the word without incluing the spaces
+        // if(string === revString){
+        //     console.log(`${string}: is palindrome`);
+        // }else{
+        //     console.log(`${string}: is not a palindrome`)
+        // }
+
+        
+
+        // <!--  using loop  -->
+        var str = prompt("please enter the a string")
+        var len = str.length;
+        var msg = 'it is a palindrome';
+        for (let i = 0; i <= len / 2; i++) {
+            if (str[i] != str[len - 1 - i]) {
+                msg = 'it is not a palindrome';
+            }
+        }
+        console.log(`${str} : ${msg}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
