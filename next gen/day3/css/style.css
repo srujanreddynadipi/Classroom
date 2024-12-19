@@ -1,0 +1,17 @@
+h2{
+    background-color: lightblue;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    border: 2px solid black;
+}
+
+p{
+    color: white;
+    padding: 30px;
+    margin: 0;
+    border: 2px solid black;
+    background-image: url(bg-kalki.jpeg);
+    background-repeat:  no-repeat ;     
+    background-size: cover;
+}

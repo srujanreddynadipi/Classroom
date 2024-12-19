@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Ordering App</title>
+    <style>
+        /* Basic CSS styling - you can customize this further */
+        body {
+            font-family: sans-serif;
+        }
+
+        .menu-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Welcome to our Online Ordering!</h1>
+
+    <h2><a href="#menu">Menu</a></h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Delicious pizza with your choice of toppings.</p>
+            <button onclick="addItem('Pizza')">Add to Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Juicy burger with cheese, lettuce, and tomato.</p>
+            <button onclick="addItem('Burger')">Add to Order</button>
+        </div>
+    </div>
+
+    <h2>Your Order</h2>
+    <ul id="order-list"></ul>
+
+    <script>
+        function addItem(itemName) {
+            const orderList = document.getElementById('order-list');
+            const newItem = document.createElement('li');
+            newItem.textContent = itemName;
+            orderList.appendChild(newItem);
+        }
+    </script>
+</body>
+
+</html>

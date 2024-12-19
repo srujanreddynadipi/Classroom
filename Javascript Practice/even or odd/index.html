@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function check(){
+           var val = parseInt(document.getElementById("data").value);
+           
+           if(val%2===0){
+            document.getElementById("result").innerText = `${val} is Even number `;
+           }else{
+            document.getElementById("result").innerText = `${val} is Odd number `;
+           }
+
+           var res = val%2 == 0 ? "Even" : "Odd";
+           var h2 = document.createElement("h2");
+           h2.innerText = ` ${val} is ${res} number`;
+           document.body.appendChild(h2);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="" id="data" placeholder="Enter the number"><br>
+    <button onclick="check()">check</button>
+    <h3 id="result"></h3>
+</body>
+</html>

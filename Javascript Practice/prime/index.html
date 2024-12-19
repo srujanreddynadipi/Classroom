@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        var number = prompt("please enter a number ");
+        if(number <= 1){
+          console.log(`${number} is not a prime`);
+        }else{
+          for( var i = 2; i<=number ; i++){
+            if(number%i===0){
+              console.log(`${number} is not a prime`);
+              break;
+            }else{
+              console.log(`${number} is  a prime`);
+              break;
+            }
+          }
+        }
+        
+          
+          // using direct method
+       //   const numberToCheck = 17;
+       //   if (isPrime(numberToCheck)) {
+       //     console.log(numberToCheck + " is a prime number.");
+       //   } else {
+       //     console.log(numberToCheck + " is not a prime number.");
+       //   }
+    </script>
+</head>
+<body>
+     <input type="number" name="" id="data" placeholder="Enter the number"><br>
+    <button onclick="isPrime()">check</button>
+    <h3 id="result"></h3>
+</body>
+</html>

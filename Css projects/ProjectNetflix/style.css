@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-image: url(bg.jpg);
+    height: 80vh;
+    position: relative;
+}
+.box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}

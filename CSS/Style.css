@@ -1,0 +1,17 @@
+h1{
+    color: rgb(107, 107, 143);
+}
+p{
+    color: rgb(205, 102, 102);
+}
+button{
+    color: bisque;
+    background-color: green;
+}
+body{
+    background-color:orange;r4
+}
+
+*{
+    color:  pink; 
+}

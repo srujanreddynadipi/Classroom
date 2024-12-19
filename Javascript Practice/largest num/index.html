@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //direct method
+        function largest(n1,n2,n3){
+            let lar = Math.max(n1,n2,n3);
+            console.log(`${lar} is the largest number`)
+        }
+        largest(1,2,4);
+
+        function check(a,b,c){
+            if(a>b&&a>c){
+                console.log(`${a} is largest among 3 numbers`)
+            }
+            else if(b>a&&b>c){
+                console.log(`${b} is largest among 3 numbers`)
+            }
+            else{
+                console.log(`${c} is largest among 3 numbers`)
+            }
+        }
+        check(1,31,5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

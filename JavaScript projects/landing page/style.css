@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 80vw;
+    color
+}
+:root{
+    --primary-color:#ffffff;
+    --secondary-color:#212121;
+}
+.navBar{
+ display: flex;
+ height: 67px;
+}
+.navBar li{
+    list-style: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+#dark{
+    width: 30px;
+    cursor: pointer;
+}
+strong{
+    font-size: 3rem;
+}
+.topLeft{
+    width: 50%;
+    height: 100vh;
+    padding: 12px 0;
+}
+.topRight{
+    width: 50%;
+    height: 100vh;
+    padding: 12px 0;
+}
+.section1{
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.gym-img{
+    /* margin-top: 6vh; */
+    height: 100vh;
+    width: 466px;
+}
+img.dumble-img {
+    /* width: 35vw;
+    height: 30vh; */
+    height: 200px;
+    width: 200px;
+} 
+.section1 h1{
+    font-size: 2rem;
+}
+.section2{
+    padding-left: 23px;
+    padding-right: 23px;
+    height: 100vh;
+
+}
+.section2 h1{
+    font-size: 2.5rem;
+}
+.section2 p{
+    padding: 0 3vw;
+    text-align: center;
+}
+.box{
+    padding: 12px 0;
+    min-width: 20vw;
+    border: 2px rgb(188, 37, 37) solid;
+    margin: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.box ul{
+    list-style: none;
+}
+.box ul li{
+margin: 12px 12px;
+}
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 5px;
+}
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50vw; */
+}
+.section3 table{
+    width: 100%;
+    margin: 40 px 0;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+.section3 table th{
+    width:23vw;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+.section3 table td{
+    width:23vw;
+    border-bottom: 1px solid black;
+
+}
+.section3 {
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.section3 h1{
+    font-size: 2.3rem;
+}
+
+.section3 table tr th{
+    width: 20vw;
+}
+.footer{
+    width: 80vw;
+}
+.footer ul li{
+    list-style: none ;
+    /* text-decoration: none; */
+    margin-top: 7px;
+    /* color: black; */
+}

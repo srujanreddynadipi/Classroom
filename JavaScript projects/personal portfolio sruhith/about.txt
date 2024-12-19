@@ -1,0 +1,5 @@
+Here's the remembered text:
+
+My name is Srujan Reddy Nadipi. I am from Meerpet Medbowli. I completed my 10th standard from Matrusri High School with a 10.0 CGPA in 2020. I also completed my 12th standard from Vidya Vikas Junior College with a score of 816 in 2022. Currently, I am pursuing my B.Tech in Computer Science and Graphic Design from Teegala Krishna Reddy Engineering College.
+
+My hobbies include reading books, and I have a passion for coding. I am skilled in computer languages such as C, Java, OOPs, HTML, CSS, JavaScript, and Tailwind. My short-term goal is to pass my B.Tech without any backlogs, improve my skills, and complete an internship. My long-term goal is to become a web developer at Google.

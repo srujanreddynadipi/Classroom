@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRipt type="text/javascript">
+
+
+        var fact = 1
+        function factorial(number) {
+            if (number > 1) {
+                fact = fact * number;
+                factorial(number - 1)
+            }
+        }
+        factorial(5);
+        console.log("factorial of 5 is : " + fact)
+
+
+
+        var fat = 1;
+        function facto(num) {
+          if (num <= 1) {
+            return fat; // Base case: factorial of 0 or 1 is 1
+          }
+          fat = fat * num;
+          return facto(num - 1); // Recursive call with num decreased
+        }
+        var result = facto(6);
+        console.log("factorial of 6 is : " + result); // Output: 720
+
+
+    </SCRipt>
+</head>
+
+<body>
+
+</body>
+
+</html>
