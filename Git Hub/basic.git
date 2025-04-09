@@ -1,0 +1,26 @@
+git clone url // this used to copy the entire code into our system
+
+clear      // used to clear the file
+
+ls      // show the list
+
+ls -a    // show hidden files
+
+git status   // status
+
+untracked   // new files that hit doesmt yet track 
+
+modified    // changed 
+
+staged    // file is ready to be commited
+
+unmodified    // unchanged
+
+<------------------Add & commit  -------------------->
+
+add adds new or changed files in your working directory ti the git staging area 
+
+     git add filename
+     git add .                 // to add the all files in the folder 
+
+commit - it is the record of the change 

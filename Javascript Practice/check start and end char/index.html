@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+        var string = prompt("please enter the string")
+        var fchar = prompt("please  enter  first char")
+        var lchar = prompt("please  enter  last char")
+        var len = string.length;
+         
+        // if(string[0] === fchar && string[len-1] === lchar){
+        //     console.log(`the first and the last letters are same as given by user`)
+        // }else{
+        //     console.log(`the first and the last letters are not the same as given by user`)
+        // }
+
+        if(string.startsWith(fchar) && string.endsWith(lchar)){
+            console.log(`the first and the last letters are same as given by user`)
+        }else{
+            console.log(`the first and the last letters are not the same as given by user`)
+        }
+
+        
+        // chech wheter a given word is pressent in the word are not
+        var mainString = "this is the main string"
+        var subString = "the";
+        var test1 = mainString.includes(subString); 
+        console.log(test1);
+        var test2 = mainString.indexOf(subString); 
+        console.log(test2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

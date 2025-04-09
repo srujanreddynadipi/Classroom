@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+    <div class="container bg-gray-50 flex  mx-auto  items-center  mt-48 justify-center">
+        <div class="left w-1/2 lg:w-1/4">
+            <img class="w-80 justify-center" src="facebook.svg" alt="">
+            <p class="text-lg mx-6">Faceboook helps you connect and share with the people in your life</p>
+        </div>
+
+        <div class="right max-w-m w-1/2 lg:w-1/4 flex-col">
+            <form class="bg-white shadow-lg rounded-xl px-8 pt-6 pb-8 mb-4">
+                <div class="heading flex content-center item">
+                    <h4 class="text-lg font-semibold mx-auto pl-4 py-3">Log in to Faceboook</h4>
+                </div>
+                <div class="mb-4">
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username" type="text" placeholder="password">
+                </div>
+                <div class="flex items-center mt-3 content-center ">
+                    <button
+                        class="bg-blue-500 mx-auto hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button">
+                        Sign In
+                    </button>
+                </div>
+                <div class="anchor flex items-center justify-center my-3">
+                    <span>Forgot Password?</span>
+                </div>
+                <hr>
+                <div class="create flex justify-center">
+                    <button
+                        class="bg-green-500 mx-auto mt-5 hover:bg-green-400  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button">
+                        Create new Account
+                    </button>
+                </div>
+
+            </form>
+            <p class="text-center text-gray-500 text-xs">
+                &copy;2020 Acme Corp. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

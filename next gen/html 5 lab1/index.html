@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An advanced HTML5 example demonstrating         	various elements and attributes">
+    <title>Advanced HTML5 Example</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(bg-lightblue-minimal.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p {
+            text-align: center;
+
+        }
+
+        header {
+            background: #53a2b6;
+            color: #fff;
+            padding: rem 0;
+            text-align: center;
+
+        }
+        #logo:hover{
+            transition: none;
+            box-shadow: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .example-html {
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+
+        .ser {
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .ser h2 {
+            text-align: center;
+        }
+
+        .ser img {
+            border-radius: 20px;
+            width: 500px;
+            height: 370px;
+            padding: auto;
+        }
+
+
+        img {
+            transition: background 0.5s , transform 0.5s;
+            box-shadow: 1px 1px 20px #7a8dcdf7,
+                       1px 1px 40px #4b6483f7;
+        }
+        img:hover {
+            transform: translateY(-10px);
+          }
+
+        .img-con {
+            display: flex;
+            justify-content: center;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form fieldset {
+            border: none;
+        }
+
+        form {
+            border-radius: 20px;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+
+        input {
+            width: 50dvw;
+        }
+
+        #btn {
+            padding: 8px;
+            border: none;
+            width: 100px;
+            border-radius: 20px;
+            background-color: rgb(94, 194, 105);
+            color: white;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .btn-con {
+            display: flex;
+            justify-content: center;
+        }
+
+        .videos {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .vid {
+            border-radius: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="sub1">
+                    <img id="logo" width="50" src="html-logo.png.png" alt="">
+                </div>
+                <div class="sub2">
+                    <h1>Edunet Tutorials</h1>
+                </div>
+                <div class="sub3">
+                    <ul>
+                        <li><a href="#home" aria-label="Home">Home</a></li>
+                        <li><a href="#about" aria-label="About">About</a></li>
+                        <li><a href="#services" aria-label="Services">Services</a></li>
+                        <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Advanced HTML5 Page</h1>
+            <p>This page demonstrates various HTML5 elements and attributes at an advanced level.</p>
+            <figure>
+                <img class="example-html fade-in" src="html-example.jpeg" alt="Advanced HTML5 Example 	Image"
+                    width="600" height="400">
+                <figcaption>Advanced HTML5 Example</figcaption>
+            </figure>
+        </section>
+
+        <section id="about">
+            <h1>About Us</h1>
+            <p>We specialize in modern web development techniques and provide
+                comprehensive tutorials for all levels.</p>
+        </section>
+        <h1 id="our-services">Our Services</h1>
+        <section id="services">
+            <div class="services-container">
+                <div class="services1 ser">
+                    <h2>Web Development</h2>
+                    <div class="img-con"> <img src="webdev.jpeg" alt=""></div>
+                    <p>We build responsive and accessible web applications using the latest web technologies.</p>
+                </div>
+                <div class="services2 ser">
+                    <h2>SEO Optimization</h2>
+                    <div class="img-con"><img src="uiux.jpeg" alt=""></div>
+                    <p>Our SEO services help improve your website's visibility and ranking on search engines.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form action="/submit-form" method="POST">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="btn-con"><button id="btn" type="submit">Submit</button></div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- Embedded YouTube Video -->
+    <section id="video">
+        <h1>Watch Our Introduction Video</h1>
+        <div class="videos">
+            <iframe class="vid" width="450" height="315"
+                src="https://www.youtube.com/embed/HcOc7P5BMi4?si=tb2LJ8qhf2eLe4o6" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="vid" width="450" height="315"
+                src="https://www.youtube.com/embed/ESnrn1kAD4E?si=x-OXzcNOEPDwj5ZX" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="vid" width="450" height="315"
+                src="https://www.youtube.com/embed/VlPiVmYuoqw?si=xfWr9WX3b3mljSba" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <address>
+            <p>Contact us at <a href="mailto:info@example.com">info@example.com</a> </p>
+        </address>
+        <p>&copy; 2024 Advanced HTML5 Example. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        // JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            });
+        });
+    </script>
+</body>
+
+</html>

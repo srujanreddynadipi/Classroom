@@ -1,0 +1,122 @@
+.homepage {
+    display: flex; /* Arrange search and image side-by-side */
+  }
+  
+  .search-container {
+    width: 40%; /* Adjust as needed */
+    padding: 20px;
+    background-color: #fff; /* Or your desired background color */
+  }
+  
+  .search-title {
+    /* Add your title styles */
+  }
+  
+  .search-subtitle {
+    /* Add your subtitle styles */
+  }
+  
+  .search-form {
+    /* Style your form elements */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .search-button {
+    /* Style your search button */
+    background-color: #ff385c; /* Airbnb's red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    width: 60%; /* Adjust as needed */
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100vh; /* Make image cover full viewport height */
+    object-fit: cover;
+  }
+  /* General Styling */
+body {
+    margin: 0; /* Reset default body margin */
+    font-family: sans-serif; /* Choose your preferred font */
+  }
+  
+  .homepage {
+    display: flex; /* Arrange search and image side-by-side */
+  }
+  
+  /* Search Container Styling */
+  .search-container {
+    width: 40%; 
+    padding: 20px;
+    background-color: #fff; 
+  }
+  
+  .search-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .search-subtitle {
+    font-size: 16px;
+    color: #555; /* Slightly lighter text color */
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block; /* Place labels above inputs */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .search-button {
+    background-color: #ff385c; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+  }
+  
+  .search-button:hover {
+    background-color: #e61e46; 
+  }
+  
+  /* Hero Image Styling */
+  .hero-image {
+    width: 60%; 
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+  }

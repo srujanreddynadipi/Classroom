@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        // with the static values
+        const a = 4;
+        const b = 6;
+        let c = 0;
+        function add(a, b) {
+            return a + b;
+        }
+        console.log( `the sum of ${a} and ${b} is ${add(a,b)}`);
+
+
+
+        // with the dynamic values
+        function adding(c,d){
+            return c+d;
+        }
+        console.log(`the sum of 2 num is ${adding(6,8)}`)
+
+
+
+        //taking inputs from user
+        let e = prompt("please enter the first num:");
+        let f = prompt("please enter the second num:");
+
+        var g = parseInt(e) + parseInt(f);
+        console.log(`the sum of ${e} and ${f} is ${g}`)
+    </script>
+</head>
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>HTML Cheatsheet by CodeWithHarry</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="copy.png" alt=""></span>
+        <div class="content center">
+            This HTML Cheatsheet is For You!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b> Boler Plate:</b> This is the basic   code
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+            </li> 
+            <li><b>span tag:</b> The span is a container for inline content
+                <pre class="language-html"><code>&lt;span&gt; This is span block &lt;/span&gt;</code></pre>
+            </li> 
+            <li><b>multiple lines</b> 
+                <pre class="language-html"><code>.block$*4</code></pre>
+            </li> 
+            <li><b>pre tag:</b> The pre tag represents pre-formatted text
+                <pre class="language-html"><code> &lt;pre&gt; Hello World &lt;/pre&gt; </code></pre>
+            </li> 
+            <li><b>code tag:</b> The code tag is used to represent source codes in HTML
+                <pre class="language-html"><code> &lt;code&gt;
+ import python
+ &lt;/code&gt; </code></pre>
+            </li> 
+            <li><b> b tag</b> 
+                <pre class="language-html"><code> &lt;b&gt;I'm bold text&lt;/b&gt; </code></pre>
+            </li> 
+            <li><b> strong tag</b> 
+                <pre class="language-html"><code> &lt;strong&gt;I'm important text&lt;/strong&gt; </code></pre>
+            </li> 
+            <li><b> i tag </b> 
+                <pre class="language-html"><code> &lt;i&gt;I'm italic text&lt;/i&gt; </code></pre>
+            </li> 
+            <li><b> ol :</b>  
+                <pre class="language-html"><code> &lt;ol&gt;
+    &lt;li&gt;Data 1&lt;/li&gt;
+    &lt;li&gt;Data 2&lt;/li&gt;
+    &lt;li&gt;Data 3&lt;/li&gt;
+&lt;/ol&gt; </code></pre>
+            </li> 
+            <li><b> ul:</b>  
+                <pre class="language-html"><code> &lt;ul&gt;
+    &lt;li&gt;Your Data&lt;/li&gt;
+    &lt;li&gt;Your Data&lt;/li&gt;
+&lt;/ul&gt; </code></pre>
+            </li> 
+            <li><b> audio tag:</b>  
+                <pre class="language-html"><code> &lt;audio controls&gt;
+    &lt;source src="demo.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt; </code></pre>
+            </li> 
+            <li><b> img tag:</b>  
+                <pre class="language-html"><code> &lt;img src="Source_of_image" alt="Alternate text"&gt; </code></pre>
+            </li> 
+            <li><b> video tag:</b>  
+                <pre class="language-html"><code> &lt;video width="480" height="320" controls&gt;
+    &lt;source src="demo_move.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt; </code></pre>
+            </li> 
+            <li><b> Table Structure:</b>  
+                <pre class="language-html"><code> &lt;table&gt;
+    &lt;caption&gt;Demo Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Column1&lt;/th&gt;
+            &lt;th colspan="2"&gt;Column2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data1&lt;/td&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data1&lt;/td&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&nbsp;&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt; </code></pre>
+            </li> 
+            <li><b> links :</b>  
+                <pre class="language-html"><code> &lt;a href="https://www.codewithharry.com/"&gt;Visit CodeWithHarry.com!&lt;/a&gt; </code></pre>
+            </li> 
+            <li><b> Form:</b> 
+                <pre class="language-html"><code> &lt;form action="/action.php" method="post"&gt; 
+    &lt;textarea cols="20" name="comments" rows="5"&gt;Comment&lt;/textarea&gt;&lt;br /&gt;
+    &lt;label&gt;&lt;input name="terms" type="checkbox" value="tandc" /&gt;Accept terms&lt;/label&gt; &lt;br /&gt;
+    &lt;input type="submit" value="Submit" /&gt;
+&lt;/form&gt; </code></pre>
+            </li> 
+            <li><b> Text Input:</b> 
+                <pre class="language-html"><code> &lt;input type="text" name="username" placeholder="Enter Username"&gt; </code></pre>
+            </li> 
+            <li><b> Password Input:</b> 
+                <pre class="language-html"><code> &lt;input type="password" name="password" placeholder="Enter Password"&gt; </code></pre>
+            </li> 
+            <li><b> Checkbox:</b> 
+                <pre class="language-html"><code> &lt;input type="checkbox" name="agree" value="yes"&gt; I agree </code></pre>
+            </li> 
+            <li><b> Radio Button:</b> 
+                <pre class="language-html"><code> &lt;input type="radio" name="gender" value="male"&gt; Male&lt;br&gt;&lt;input type="radio" name="gender" value="female"&gt; Female </code></pre>
+            </li> 
+            <li><b> Submit Button:</b> 
+                <pre class="language-html"><code> &lt;input type="submit" value="Submit"&gt; </code></pre>
+            </li> 
+            <li><b> Button:</b> 
+                <pre class="language-html"><code> &lt;button type="button"&gt;Click Me&lt;/button&gt; </code></pre>
+            </li> 
+            <li><b> Select (Dropdown) List:</b> 
+                <pre class="language-html"><code> &lt;select name="country"&gt;&lt;option value="usa"&gt;United States&lt;/option&gt;&lt;option value="canada"&gt;Canada&lt;/option&gt;&lt;/select&gt; </code></pre>
+            </li> 
+            <li><b> Textarea:</b> 
+                <pre class="language-html"><code> &lt;textarea name="comments" rows="4" cols="50"&gt;Enter comments here&lt;/textarea&gt; </code></pre>
+            </li> 
+            <li><b> File Input:</b> 
+                <pre class="language-html"><code> &lt;input type="file" name="fileupload"&gt; </code></pre>
+            </li> 
+            <li><b> Range Input:</b> 
+                <pre class="language-html"><code> &lt;input type="range" name="volume" min="0" max="100"&gt; </code></pre>
+            </li>  
+            <li><b> Responsive Design:</b> 
+                <pre class="language-html"><code> &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;style&gt;
+  @media (max-width: 600px) {
+    body { font-size: 18px; }
+  }
+&lt;/style&gt; </code></pre>
+            </li> 
+            <li><b> :</b> 
+                <pre class="language-html"><code>  </code></pre>
+            </li> 
+        </ol>
+    </div>
+</body>
+
+</html>

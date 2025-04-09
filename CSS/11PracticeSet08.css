@@ -1,0 +1,19 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 20px solid #ffe66d;
+    border-top: 20px solid #4ecdc4;
+    border-radius: 50%;
+    animation: spinAnimation 0.5s ease-in-out 0s infinite normal ;
+}
+div:hover{
+    transform: rotate(0deg 360deg);
+}
+@keyframes spinAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,8 @@
+.plate-img{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.leaf{
+    transform: rotate(-50,50);
+}

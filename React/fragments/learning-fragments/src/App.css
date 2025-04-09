@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    padding: 7px;
+}
+.list-group li{
+    /* background-color: pink; */
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: rgb(26, 6, 6);
+}
+.food-input{
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0px ;
+}

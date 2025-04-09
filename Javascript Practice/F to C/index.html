@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function convert(){
+            var cel = parseInt(document.getElementById("data").value);
+            const factor = 32
+            var result = (cel*1.8)+factor
+            document.getElementById("result").innerText =` ${cel} celcius = ${result} FARENHEIT`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="align-items: center;">
+        <input type="number" id="data" placeholder="enter the temperature C"><span>celcius</span><br>
+        <button onclick="convert()">convert</button><span>to farenheit</span>
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.min-h-screen{
+    min-height: 100vh;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-pink{
+    background-color: pink;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.item-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-start{
+    justify-content: start;
+}
+.ubuntu{
+    font-family: "Ubuntu Sans Mono", monospace;
+}.font-bold{
+    font-weight: 900;
+}
+.flex-col{
+    flex-direction: column
+    ;
+}
+.flex-row{
+    flex-direction: row;
+}
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.my-2{
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.px-2{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.px-3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-blue{
+    color: rgb(142, 114, 179);
+    
+}
+.btn{
+    padding: 7px 20px;
+    border: 1px black solid;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(13, 139, 202);
+    cursor: pointer;
+}
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+.f1{
+    font-size: 20px;
+}
+.f2{
+    font-size: 15px;
+}
+
+.txt-dec{
+    text-decoration: none;
+}

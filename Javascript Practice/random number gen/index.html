@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function random() {
+            document.getElementById("rand").innerText = Math.floor(Math.random() * 10);
+        }
+         randomNumber = function() {
+            return Math.floor(Math.random()*10)+1; 
+            }
+            console.log(randomNumber);
+    </script>
+</head>
+
+<body>
+    <div>
+        <button onclick="random()">Genreate</button>
+        <h1 id="rand"></h1>
+    </div>
+</body>
+
+</html>
