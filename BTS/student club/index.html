@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Club Details</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #34495e;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1 0 auto;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 600;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .show-entries {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .search-box {
+            flex-grow: 0;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 250px;
+            padding-left: 35px;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        th {
+            background-color: var(--secondary);
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-weight: 500;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .club-image-container {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .club-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button.student {
+            background-color: var(--accent);
+        }
+        
+        .button.student:hover {
+            background-color: #c0392b;
+        }
+        
+        .sr-number {
+            font-weight: bold;
+            color: var(--primary);
+            text-align: center;
+        }
+        
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 70px; /* Add space for fixed footer */
+        }
+        
+        .page-link {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .page-link.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .page-link:hover:not(.active) {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Club Details</h1>
+    </header>
+    
+    <div class="container">
+        <div class="controls">
+            <div class="show-entries">
+                <label for="entries">Show</label>
+                <select id="entries">
+                    <option value="10" selected>10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                <span>entries</span>
+            </div>
+            
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search clubs...">
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Club Image</th>
+                    <th>Club Standard Name</th>
+                    <th>Club Name</th>
+                    <th>President Name</th>
+                    <th>Club Member List</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sr-number">1</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>Test01</td>
+                    <td>T20</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-number">2</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>Test01</td>
+                    <td>T20</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-number">3</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>International Cricket Club</td>
+                    <td>BPSI</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-number">4</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>Cultural Club</td>
+                    <td>test cricket</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-number">5</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>Cultural Club</td>
+                    <td>Testing group12345</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-number">6</td>
+                    <td>
+                        <div class="club-image-container">
+                            <img src="/api/placeholder/60/60" alt="Club image" class="club-image">
+                        </div>
+                    </td>
+                    <td>Cultural Club</td>
+                    <td>RV</td>
+                    <td>ARJUN P DIGRAJKAR</td>
+                    <td>
+                        <a href="#" class="button">Teacher List</a>
+                        <a href="#" class="button student">Student List</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="pagination">
+            <a href="#" class="page-link">Previous</a>
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">Next</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 SmartCookie Rewards Pvt.Ltd</p>
+        </div>
+    </footer>
+</body>
+</html>

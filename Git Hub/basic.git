@@ -4,7 +4,7 @@ clear      // used to clear the file
 
 ls      // show the list
 
-ls -a    // show hidden files
+ls -Hidden    // show hidden files
 
 git status   // status
 
@@ -23,4 +23,102 @@ add adds new or changed files in your working directory ti the git staging area
      git add filename
      git add .                 // to add the all files in the folder 
 
+---------------this is the output given -------------
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)             // staged means that ready to commit
+        new file:   basic.git
+        new file:   index.html
+
+        
 commit - it is the record of the change 
+        
+        git commit -m "some message"                       // this 
+
+
+<------------------------  push -------------------------->
+
+push - upload local repo content to remote repo
+
+         git push origin main                // 
+
+
+<------------------------ init ----------------->
+    
+   git init                         //creates a new empty Git repository in the current directory
+   git remote add origin <-link-> 
+   git remote add origin https://github.com/srujanreddynadipi/Web-Devlopment.git 
+   git remote -v  
+                         ------output-----------
+                    PS C:\Users\sruja\Classroom\Git Hub\LocalRepo> git remote -v
+                    origin  https://github.com/srujanreddynadipi/Web-Devlopment.git (fetch)
+                    origin  https://github.com/srujanreddynadipi/Web-Devlopment.git (push)
+
+    git branch                       // to check the branch
+                    -----output--------
+                    PS C:\Users\sruja\Classroom\Git Hub\LocalRepo>     git branch
+                    * master   
+    git branch -M main               //Rename default branch to 'main' (if needed)
+                    -----output------
+                    PS C:\Users\sruja\Classroom\Git Hub\LocalRepo> git branch -M main
+                    PS C:\Users\sruja\Classroom\Git Hub\LocalRepo>     git branch    
+                    * main
+                    PS C:\Users\sruja\Classroom\Git Hub\LocalRepo> 
+    git push -u origin main          // -u (upstream)  this means making a short cut for future to use [git push]
+
+<-------------------------Branch ------------------>
+
+git branch                               // to check branch
+git branch -M main                        // to rename branch
+git checkout -b <-new branch name->     //to create new branch 
+git chechout <-branch name->             // to navigate
+git branch -d <-branch name->          // delete the branch
+git push origin feature1                 // to push into the branch 
+
+
+<----------------------  Merging ------------------------->
+
+way 1 
+    git diff <-branch name->            // to compare commits,branches , files & more
+    git merge <-branch name->          //to merge 2 branches
+
+way 2 
+    PR  //creating a pull request and merge in the github itself
+         // its lets you tell others about changes yoou have pushed to a branch in a repo on github
+
+<----------------------  Pull  ------------------------->
+
+git pull origin main  // used to fetch and download content from a remote repo and immediately update the local repo
+
+
+<----------------------  merge conflicts ------------------------->
+
+an event that takes place when git is unable to automatically resolve differences in code 
+between to commits.
+
+
+git log              //used to see all the commits
+
+
+<---------------------Undoing changes -------------------------->
+
+case 1 
+    staged changes 
+        git reset<-file name->
+        git reset 
+
+case 2 
+    commites changes (for one commit)
+        git reset HEAD-1
+    
+case 3 
+    commited changes (for many commits)
+        git reset <-commit hash->
+        git reset --hard <commit hash->
+
+<----------------------Fork------------------------>
+
+ -a fork is a new repo that shares code and visibiity settings with the original "upstram" repo
+
+ -fork is a rough copy
+
+    
