@@ -1,0 +1,16 @@
+{
+  "name": "blogexpress",
+  "version": "1.0.0",
+  "description": "this is a blog we created during code with harry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
